@@ -30,8 +30,15 @@ class KeyCode
     public function verify($key, $code)
     {
         $key = $this->key_header . $key;
-        $cache_code = cache($key);
+        $cache_code = \Cache::pull($key);
 
         return $code == $cache_code;
+    }
+
+    public function getCode($key)
+    {
+        $key = $this->key_header . $key;
+        $code = cache($key);
+        return $code;
     }
 }
