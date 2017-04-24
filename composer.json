@@ -1,0 +1,21 @@
+{
+    "name": "mhaoxyz/laravel-verify-code",
+    "type": "library",
+    "authors": [
+        {
+            "name": "menghao",
+            "email": "mhaoxyz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mhaoxyz\\Laravel\\VerifyCode\\": "src/"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "mhaoxyz/laravel-illuminate": "^5.4"
+    }
+}
